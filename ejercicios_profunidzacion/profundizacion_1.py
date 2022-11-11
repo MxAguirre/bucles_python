@@ -46,3 +46,9 @@ print('Estado del clima')
 # Empezar aquí la resolución del ejercicio
 temperaturas = [12.8, 18.6, 14.5, 27.8, 12.1, 26.2, 13.5, 18.6,
                   14.7, 19.6, 21.2, 31.4]
+suma_total = 0
+cantidad_de_temperaturas = len(temperaturas)
+for i in range(len(temperaturas)):
+  suma_total += temperaturas[i]
+promedio_de_temperaturas = suma_total / cantidad_de_temperaturas
+print(f'el promedio de temperaturas es: {round(promedio_de_temperaturas, 1)}')

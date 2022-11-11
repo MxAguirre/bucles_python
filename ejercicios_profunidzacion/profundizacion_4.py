@@ -64,3 +64,34 @@ Alumno:
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+numero_1 = float(input('Ingredese el primer numero: '))
+numero_2 = float(input('Ingredese el segundo numero: '))
+
+while True:
+    print('Ingrese 1 para Suma (+)')
+    print('Ingrese 2 para Resta (-)')
+    print('Ingrese 3 para Multiplicación (*)')
+    print('Ingrese 4 para División (/)')
+    print('Ingrese 5 SALIR')
+    operacion = str(input('\n'))
+    if operacion == '1':
+      resultado = numero_1 + numero_2
+      print(f'El resultado de la suma es: {resultado}')
+      break
+    elif operacion == '2':
+      resultado = numero_1 - numero_2
+      print(f'El resultado de la resta es: {resultado}')
+      break
+    elif operacion == '3':
+      resultado = numero_1 * numero_2
+      print(f'El resultado del prpducto es: {resultado}')
+      break
+    elif operacion == '4':
+      resultado = numero_1 / numero_2
+      print(f'El resultado de la division es: {resultado}')
+      break
+    elif operacion == '5':
+      break
+    else:
+      print('¡Ingrese una opcion valida!\n')
